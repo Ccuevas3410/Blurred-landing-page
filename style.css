@@ -4,14 +4,59 @@ body {
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
+
 a {
   color: white;
   text-decoration: none;
 }
-a:hover{
 
-  color:red;
+a:hover {
 
+  color: red;
+
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+button:hover {
+  background: #fff;
+  color: red;
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: red;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 .showcase::after {
@@ -33,6 +78,7 @@ a:hover{
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
+
 .showcase:hover .content {
   filter: blur(2px);
   -webkit-filter: blur(2px);
@@ -66,12 +112,14 @@ a:hover{
   margin-top: 1rem;
   font-size: 20px;
 }
+
 .container {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 4rem 1rem;
 }
+
 .grid-2 {
   display: grid;
   grid-gap: 20px;
@@ -87,6 +135,7 @@ a:hover{
   background: #f4f4f4;
   color: #333;
 }
+
 .bg-dark {
   background: #333;
   color: #f4f4f4;
@@ -102,23 +151,27 @@ footer p {
   .showcase::after {
     height: 50vh;
   }
+
   .content {
     top: 5%;
     margin-top: 5px;
   }
+
   .content-logo {
     height: 140px;
     width: 140px;
   }
- 
+
   .grid-2 {
     grid-template-columns: 1fr;
   }
+
   .services div {
     border-bottom: #333 solid 1px;
     padding: 1.2rem 1rem;
   }
 }
+
 /*Small screens */
 @media (max-height: 500px) {
 
