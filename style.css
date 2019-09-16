@@ -162,6 +162,19 @@ footer p {
     width: 140px;
   }
 
+  .text {
+    display: none;
+  }
+
+  .span {
+    color: #333;
+  }
+
+  #name {
+    display: grid !important;
+    font-size: 2px !important;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
   }
