@@ -59,6 +59,15 @@ button:hover:after {
   transition: 800ms ease all;
 }
 
+
+#aboutMe:hover {
+
+
+  background: #white;
+  color: red;
+}
+
+
 .showcase::after {
   content: " ";
   height: 100vh;
